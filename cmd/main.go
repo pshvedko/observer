@@ -42,9 +42,9 @@ func main() {
 		log.Fatal(err)
 	}
 
-	co := observer.New()
+	o := observer.New()
 
-	go co.RunContext(ctx, events)
+	go o.Run(ctx, events)
 
 	<-ctx.Done()
 }
