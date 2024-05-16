@@ -125,7 +125,7 @@ func (o *Observer) Run(ctx context.Context, events <-chan esl.Event) {
 				return
 			}
 
-			id := e.Get("Channel-Call-UUID")
+			id := e.Get("Unique-ID")
 			if id != "" {
 				o.send(e, id)
 			}
