@@ -2,8 +2,9 @@ package observer
 
 import (
 	"context"
-	"github.com/mdigger/esl"
 	"sync"
+
+	"github.com/mdigger/esl"
 )
 
 type Observer struct {

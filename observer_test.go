@@ -3,6 +3,7 @@ package observer
 import (
 	"context"
 	"fmt"
+
 	"github.com/mdigger/esl"
 )
 
